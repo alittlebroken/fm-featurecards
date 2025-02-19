@@ -1,0 +1,58 @@
+/* Font Imports */
+
+/* Reset Margins and Padding */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set default values for all site elements */
+:root {
+
+    /* colours */
+    --col-pri-red: hsl(0, 78%, 62%);
+    --col-pri-cyan: hsl(180, 62%, 55%);
+    --col-pri-orange: hsl(34, 97%, 64%);
+    --col-pri-blue: hsl(212, 86%, 64%);
+
+    --col-neu-grey500: hsl(234, 12%, 34%);
+    --col-neu-grey400: hsl(212, 6%, 44%);
+    --col-neu-white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    font-size: 15px;
+
+}
+
+/* Fonts */
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-size: 376px) {
+
+}
