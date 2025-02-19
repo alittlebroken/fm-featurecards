@@ -22,6 +22,10 @@
 
     /* Typography */
     font-size: 15px;
+    color: var(--col-neu-grey400);
+
+    /* Borders */
+    --border-card-size: 0.27rem;
 
 }
 
@@ -46,11 +50,73 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
+
+    padding: 2rem;
+
+    background: var(--col-neu-white);
+}
+
+header > h1, header > h2 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Card Styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1rem;
+
+    width: 100%;
+    height: 18rem;
+
+    padding: 2rem;
+
+    border-radius: 4px;
+    box-shadow: 2px 9px 17px -6px rgba(0 ,0 ,0, 0.23); 
+}
+
+.card > p {
+    font-size: .9rem;
+}
+
+.card-footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.top-cyan {
+    border-top: var(--border-card-size) solid var(--col-pri-cyan);
+}
+
+.top-red {
+    border-top: var(--border-card-size) solid var(--col-pri-red);
+}
+
+.top-orange {
+    border-top: var(--border-card-size) solid var(--col-pri-orange);
+}
+
+.top-blue {
+    border-top: var(--border-card-size) solid var(--col-pri-blue);
 }
 
 @media screen and (min-size: 376px) {
