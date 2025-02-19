@@ -24,6 +24,9 @@
     font-size: 15px;
     color: var(--col-neu-grey400);
 
+    /* Borders */
+    --border-card-size: 0.27rem;
+
 }
 
 /* Fonts */
@@ -101,19 +104,19 @@ header > p {
 }
 
 .top-cyan {
-    border-top: 2px solid var(--col-pri-cyan);
+    border-top: var(--border-card-size) solid var(--col-pri-cyan);
 }
 
 .top-red {
-    border-top: 2px solid var(--col-pri-red);
+    border-top: var(--border-card-size) solid var(--col-pri-red);
 }
 
 .top-orange {
-    border-top: 2px solid var(--col-pri-orange);
+    border-top: var(--border-card-size) solid var(--col-pri-orange);
 }
 
 .top-blue {
-    border-top: 2px solid var(--col-pri-blue);
+    border-top: var(--border-card-size) solid var(--col-pri-blue);
 }
 
 @media screen and (min-size: 376px) {
